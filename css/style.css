@@ -1,0 +1,76 @@
+body {
+    margin-top: 4%;
+    /*background-image: url(../images/bart.jpg);*/
+    background-attachment:fixed;
+}
+
+select.stations {
+    width: 80%;
+}
+
+.jumbotron {
+    /*background-color: #FFFFFF;*/
+    background-size: cover;
+    /*color: black;*/
+}
+
+a {
+    color: black;
+    padding-right: 0.5%;
+    position: relative;
+}
+
+a:hover {
+    /*color: #3333FF;*/
+    
+    text-decoration: none;
+}
+
+a.toStationTime {
+    padding: 0.5%;
+    border: thick solid #66CC33;
+    background-color: #66CC33;
+    margin-right: 0.5%;
+    border-radius: 25px;
+}
+
+a.leaving {
+    border: thick solid #FF0000;
+    background-color: #FF0000;
+}
+
+a.leaveFive {
+    border: thick solid #FFFF99;
+    background-color: #FFFF99;
+}
+
+a.StationName {
+    font-weight: bold;
+}
+
+a.feedBack {
+    float: right;
+}
+
+div.StationName {
+    margin: 2% 0 2% 0;
+    width: 100%
+}
+
+div.stationStatus {
+    margin-top: 1%;
+    width: 350px;
+}
+
+a.bartLink {
+    color: #3333FF;
+}
+
+a.newMessage {
+    background-image: url(../images/message2.png);
+    background-repeat: no-repeat;
+    float: right;
+    display: block;
+    width: 75px;
+    height: 75px;
+}

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Track Bart</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="images/favicon.ico">
+</head>
+
+<body>
+    <div class="container">
+    </div>
+    <div class="container">
+        <div class="jumbotron">
+            <div class="container">
+                <a class="newMessage" data-toggle="modal" data-target="#messageUpdate" href="#"></a>
+                <h2>BART STATUS</h2>
+                <label>Select City</label>
+                <select name="stations" class="form-control stations selectStation">
+                </select>
+            </div>
+            <div>
+                <div class="container">
+                    <h3 class="currentTime"></h3>
+                    <!-- <h3 class="delayTime">Delay of  <span>0</span> seconds</h3> -->
+                    <div class="trainStatus" placeholder="No Trains"></div>
+                </div>
+            </div>
+        </div>
+        <div class="jumbotron">
+            <div class="footer">
+                <a class="disclaimer" data-toggle="modal" data-target="#disclamer" href="#">Terms &amp; Conditions</a>
+                <a class="feedBack" data-toggle="modal" data-target="#bartFeedBack" href="#">Feedback</a>
+            </div>
+            <!-- Modal Feedback -->
+            <div class="modal fade" id="bartFeedBack" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title" id="myModalLabel">Feedback</h4>
+                        </div>
+                        <div class="modal-body">
+                            <div class="ajax_message"></div>
+                            <form id="commentForm" class="sendmail" role="form" data-toggle="validator" action="mail/contactUs.php" method="get">
+                                <div class="form-group">
+                                    <input id="nameComment" class="form-control" type="text" name="name" placeholder="Name">
+                                </div>
+                                <div class="form-group">
+                                    <input id="emailComment" class="form-control" type="email" name="email" placeholder="Email">
+                                </div>
+                                <div class="form-group">
+                                    <textarea id="textComment" class="form-control" name="comments" placeholder="Type Comments"></textarea>
+                                </div>
+                                <button id="submitComment" type="submit" class="btn btn-primary">Submit</button>
+                            </form>
+                            <div class="error-container" style="display:none;"> Please fill the above required fields! </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal  terms and condition-->
+            <div class="modal fade" id="disclamer" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title" id="myModalLabel">Disclamer</h4>
+                        </div>
+                        <div class="modal-body">
+                            <div id="disclaimer">* Note that this information displays estimated train departure based on real time info provided by<a class="bartLink" target="_blank" href="http://bart.gov/schedules/developers/etas.aspx"> BART</a></div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary" data-dismiss="modal">Dismiss</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal messages -->
+            <div class="modal fade" id="messageUpdate" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                            <h4 class="modal-title" id="myModalLabel">Messages</h4>
+                        </div>
+                        <div class="modal-body">
+                            <div id="messageModal"></div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary" data-dismiss="modal">Dismiss</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/getCookies.js"></script>
+    <script src="js/cities.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/getData.js"></script>
+    <script src="js/data.js"></script>
+    <script src="js/validation.js"></script>
+    <script src="js/sendmail.js"></script>
+    <script src="js/getMessages.js"></script>
+</body>
+
+</html>
