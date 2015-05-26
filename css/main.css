@@ -36,11 +36,6 @@ a.StationName:hover {
 a.toStationTime:hover {
     text-decoration: none;
 }
-
-.selectStation{
-    font-size: 150%;
-    width: 80%;
-    padding: 0%;
-    margin-left: 10%;
-    margin-right: 10%;
+.navbar-fixed-top{
+    background-color: black
 }

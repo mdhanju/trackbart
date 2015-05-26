@@ -1,6 +1,13 @@
 $(document).ready(function() {
 
-    initialInfo("MONT");
+    var getDefLoc = cookie("defaultCity");
+
+    if (getDefLoc == null) {
+        getDefLoc = "MONT";
+    }
+    
+    initialInfo(getDefLoc);
+
     $('.stations').change(function() {
         var station = $(this).val();
 
