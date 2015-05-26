@@ -1,0 +1,46 @@
+.stations {
+    width: 50%;
+    margin-left: 25%
+}
+
+.StationName {
+    color: black;
+    /*margin: 0;*/
+    /*padding: 0;*/
+    
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+a.leaving,
+ a.leaving:hover{
+    color: red;
+}
+
+.toStationTime,
+ a.toStationTime:hover  {
+    color: green;
+    margin-left: 1%
+}
+
+.leaveFive,
+ a.leaveFive:hover {
+    color: yellow;
+}
+
+a.StationName:hover {
+    color: black;
+    text-decoration: none;
+}
+
+a.toStationTime:hover {
+    text-decoration: none;
+}
+
+.selectStation{
+    font-size: 150%;
+    width: 80%;
+    padding: 0%;
+    margin-left: 10%;
+    margin-right: 10%;
+}

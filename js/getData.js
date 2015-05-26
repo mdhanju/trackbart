@@ -20,7 +20,7 @@ function initialInfo(station) {
             $('.currentTime').text("Current as of " + dataTime);
             var dataStation = jsonData1.root.station.etd;
             if (typeof jsonData1.root.station.etd === "undefined") {
-                $('.trainStatus').append("No trains at this time or Updates are temporarily unavailable");
+                $('.trainStatus').append("No trains at this time </br></b> Updates are temporarily unavailable");
 
             } else {
                 var stationNameAsString = "";
