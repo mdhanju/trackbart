@@ -9,6 +9,7 @@ $(document).ready(function() {
     initialInfo(getDefLoc);
 
     $('.stations').change(function() {
+        $('.iconComplete').css("display", "none");
         var station = $(this).val();
 
         $(".trainStatus").empty();

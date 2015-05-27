@@ -39,3 +39,10 @@ a.toStationTime:hover {
 .navbar-fixed-top{
     background-color: black
 }
+
+.iconComplete,
+.iconComplete:hover{
+    color: green;
+    text-decoration: none;
+    display: none;
+}
