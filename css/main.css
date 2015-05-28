@@ -53,12 +53,13 @@ a.toStationTime:hover {
 }
 
 .selectStationLoc {
-    width: 90%;
-    padding: 5px;
+    width: 86%;
+    /*padding: 5px;*/
     line-height: 1;
     border: 0;
     border-radius: 0;
     height: 34px;
+    margin-left: 5%;
 }
 
 .iconLoc {
@@ -83,7 +84,6 @@ a.toStationTime:hover {
 
 #map-canvas {
     height: 400px;
-    /*margin: 0 10% 0 10%;*/
-    
+    margin: 0 5% 5% 5%;
     padding: 0px
 }
