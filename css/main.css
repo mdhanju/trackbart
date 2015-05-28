@@ -13,18 +13,18 @@
 }
 
 a.leaving,
- a.leaving:hover{
+a.leaving:hover {
     color: red;
 }
 
 .toStationTime,
- a.toStationTime:hover  {
+a.toStationTime:hover {
     color: green;
     margin-left: 1%
 }
 
 .leaveFive,
- a.leaveFive:hover {
+a.leaveFive:hover {
     color: yellow;
 }
 
@@ -36,13 +36,54 @@ a.StationName:hover {
 a.toStationTime:hover {
     text-decoration: none;
 }
-.navbar-fixed-top{
+
+.navbar-fixed-top {
     background-color: black
 }
 
 .iconComplete,
-.iconComplete:hover{
+.iconComplete:hover {
     color: green;
     text-decoration: none;
     display: none;
+}
+
+.stattionFindTab {
+    background-color: #fed136;
+}
+
+.selectStationLoc {
+    width: 90%;
+    padding: 5px;
+    line-height: 1;
+    border: 0;
+    border-radius: 0;
+    height: 34px;
+}
+
+.iconLoc {
+    float: right;
+    width: 8%;
+    height: 34px;
+    background-image: url("../img/location-icon.png");
+    background-size: contain;
+    background-repeat: no-repeat
+}
+
+.clearLine {
+    width: 40%;
+    margin: 0 30% 0 30%;
+    border-top: thick ridge #BABABA;
+}
+
+.selectStationDiv {
+    margin-top: 20%;
+    margin-bottom: 2%;
+}
+
+#map-canvas {
+    height: 400px;
+    /*margin: 0 10% 0 10%;*/
+    
+    padding: 0px
 }
